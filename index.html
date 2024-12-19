@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agent</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <img class="home-icon" src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo_yellowhGhost-copy.png" alt="logo travel" />
+        <nav class="menu">          
+            <button><a href="#home-section">Home</a></button>
+            <button><a href="#our-package-section">Our Package</a></button>
+            <button><a href="#call-us-section">Call Us</a></button>
+        </nav>
+    </header>
+    <hr color="lightgray">
+    <main>
+        <header class="content-header"  id="home-section">
+            <h1>Your Trusted Travel Agent's</h1><br>
+            <h3>Your happiness is our happiness </h3>
+        </header>
+    <!-- Home Content-->
+     <section class="main-container">
+        <!-- Banner AutoSlide Content-->
+         <aside class="main-item">
+            <div class="banner-img banner-1"></div>
+            <div class="banner-img banner-2"></div>
+            <div class="banner-img banner-3"></div>
+            <br>
+            <p><i>"Liburan jadi menyenangkan bersama Travel Agen-ku"</i></p>
+            <div style="display: inline-block;">
+                <img src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo_yellowhGhost-copy.png" alt="Logo" style="width: 50px; height: auto; margin-right: 10px;">
+                <b>Florence Hughes</b><br>
+                <i>Ibu Rumah Tangga 28</i>
+              </div>
+            
+         </aside>
+         <!-- Form Contact Us-->
+          <form class="main-item">
+            <p><h3>Contact Us</h3></p>
+            <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+            <label for="username-input">Your Name:</label><br>
+            <input type="text" id="username-input" placeholder="First and last name"><br>
+            <label for="email-input">Email Address:</label><br>
+            <input type="email" id="email-input" placeholder="example@email.com"><br>
+            <label for="interest-input">What are you interested in?</label><br>
+                <select id="interest-input" width="100">
+                    <option value="">Please select</option>  <!-- Option kosong untuk pilihan awal -->
+                    <option value="adventure">Adventure Travel</option>
+                    <option value="beach">Beach Vacation</option>
+                    <option value="culture">Cultural Tours</option>
+                    <option value="city">City Breaks</option>
+                    <option value="nature">Nature & Wildlife</option>
+                    <option value="luxury">Luxury Travel</option>
+                    <option value="food">Culinary Tours </option>
+                </select><br>
+            <button type="button" id="send-btn" onclick="validateForm();">SEND</button>
+          </form>
+     </section>
+     <!-- Our Package Content-->
+     
+      <section id="our-package-section">
+       
+        <article class="content">
+            <header class="our-packages-header">
+                <h1>Our Packages</h1>
+            </header> 
+           
+            <table>
+                <tr>
+                  <td rowspan="2"><img src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo_yellowhGhost-copy.png" /></td>
+                  <td><b>Bali</b></td>
+                  <td rowspan="2"><img src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo_yellowhGhost-copy.png" /></td>
+                  <td><b>Japan</b></td>
+                  <td rowspan="2"><img src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo_yellowhGhost-copy.png" /></td>
+                  <td><b>Singapore</b></td>
+                </tr>
+                <tr>
+                  <td>Travel & wisata di Bali</td>
+                  <td>Travel & wisata di Japan</td>
+                  <td>Travel & wisata di Singapore</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo_yellowhGhost-copy.png" /></td>
+                    <td><b>Bandung</b></td>
+                    <td rowspan="2"><img src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo_yellowhGhost-copy.png" /></td>
+                    <td><b>Surabaya</b></td>
+                    <td rowspan="2"><img src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo_yellowhGhost-copy.png" /></td>
+                    <td><b>Medan</b></td>
+                  </tr>
+                  <tr>
+                    <td>Travel & wisata di Bandung</td>
+                    <td>Travel & wisata di Surabaya</td>
+                    <td>Travel & wisata di Medan</td>
+                  </tr>
+              </table>
+        </article>
+      </section>
+      <!-- Call To Action Content-->
+      <section id="call-us-section">
+        <header class="content-header call-us-header">
+            <h1>Call Us</h1>
+        </header>
+        <article class="call-us">
+            <h1 style="text-align: center;">Let's travel with us</h1>
+            <p style="text-align: center;">Experience unforgettable adventures and create lifelong memories with us! <br>
+                We offer tailored travel packages designed to fulfill your every desire,<br> 
+                from relaxing beach getaways to thrilling outdoor adventures. <br>
+                Don't just dream, start exploring the world today! <br>
+                Chat us for more information and exciting offers.</p>
+                <table style="margin: auto;">
+                  <tr>
+                    <td><button id="cta" type="submit" onclick="alert('Silakan kontak kami di 081234567'); return false;">Call to Action</button></td>
+                  </tr>
+                </table>
+        </article>
+      </section>
+    </main>
+    <footer>
+        <span>Copyright ErKaPe@2024</span>
+    </footer>
+    <script src="js\script.js"></script>
+</body>
+</html>

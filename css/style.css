@@ -1,0 +1,136 @@
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-icon{
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.menu{
+    padding-top: 10px;
+}
+.content-header{
+    text-align: center;
+}
+.our-packages-header{
+    font-size: larger;
+    text-align: center;
+}
+.banner-img{
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-1{
+    background-image: url(https://picsum.photos/750);
+    display: none;
+}
+.banner-2{
+    background-image: url(https://picsum.photos/760);
+    display: none;
+}
+.banner-3{
+    background-image: url(https://picsum.photos/770);
+    display: block;
+}
+.florence-img{
+    background-image: url(https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo_yellowhGhost-copy.png);
+    display: block;
+    background-position: left;
+    border-radius: 50%;
+}
+
+.main-container{
+    display: flex;
+    gap: 24px;
+}
+.main-item{
+    flex: 1;
+}
+/* Style untuk Form*/
+form{
+    /*height: 500px; */
+    background-color: lightgray;
+    padding-left: 20px;
+    /*align-content: left;
+    text-align: center;*/
+}
+input[type="text"] {
+    width: 200px;
+    height: 30px;
+    max-width: 500px;
+    min-width: 200px;
+  }
+  input[type="email"] {
+    width: 200px;
+    height: 30px;
+    max-width: 500px;
+    min-width: 200px;
+  }
+select {
+    width: 200px;
+    height: 30px;
+  }
+  #send-btn{
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    color: white;
+    background-color: black;
+  }
+.our-packages-header{
+    background-color: aliceblue;
+    margin-top: 24px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+#our-package-section{
+    display: flex;
+  justify-content: center; /* Memusatkan elemen secara horizontal */
+  align-items: center; /* Memusatkan elemen secara vertikal (opsional) */
+}
+.content{
+    height: 600px;
+}
+/*Isi Our Package*/
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Membungkus item jika melebihi satu baris */
+    width: 200px; /* Sesuaikan lebar */
+  }
+  
+  
+
+/*Call to Action*/
+#cta{
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    text-align: center;
+  }
+
+footer{
+    margin-top: 10px;
+    text-align: center;
+}
+@media only screen and (max-width: 480px){
+    .main-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-container{
+        flex-direction: column;
+    }
+    form{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
